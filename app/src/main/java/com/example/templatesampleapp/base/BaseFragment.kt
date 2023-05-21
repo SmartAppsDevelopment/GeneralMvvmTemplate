@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 
  open class BaseFragment<T : ViewDataBinding>(private var layoutId: Int) : Fragment() {
     lateinit var binding: T
-//    val isBindingInit by lazy { this::binding.isInitialized }
+    val isBindingInit by lazy { this::binding.isInitialized }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -22,9 +22,6 @@ import androidx.fragment.app.Fragment
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        if(baseCheckAllow())
-//        context ?: return
+        context ?: return
     }
-
-     open fun baseCheckAllow(): Boolean=true
- }
+}
