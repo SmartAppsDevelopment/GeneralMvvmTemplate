@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcv_quote"
+        android:clickable="true"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:layout_margin="@dimen/_4sdp"
+app:cardElevation="@dimen/_8sdp"
+        app:strokeWidth="@dimen/_1sdp"
+
+        app:cardBackgroundColor="@color/main800"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_quotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4sdp">
+
+            <ImageView
+                android:id="@+id/img_sign_up"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/_10sdp"
+                android:rotation="180"
+                android:src="@drawable/quotes_svg_icons"
+                app:tint="@color/main500" />
+
+
+            <TextView
+                android:id="@+id/txt_category_name"
+                android:textAppearance="@style/weight500"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_sign_up"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/aleo_regular"
+                android:text="Quotes"
+                android:textColor="@color/main50"
+                android:textSize="@dimen/_15ssp" />
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                app:tint="@color/main500"
+                android:src="@drawable/quotes_svg_icons"
+                android:layout_below="@+id/txt_category_name"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_10sdp" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

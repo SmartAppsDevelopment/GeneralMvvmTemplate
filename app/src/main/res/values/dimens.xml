@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_icon_w" >@dimen/_21sdp</dimen>
+    <dimen name="card_icon_h" >@dimen/_21sdp</dimen>
+
+    <dimen name="card_icon_quote_w" >@dimen/_16sdp</dimen>
+    <dimen name="card_icon_quote_h" >@dimen/_16sdp</dimen>
+</resources>
